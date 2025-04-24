@@ -1,63 +1,98 @@
 #include <stdio.h>
-
 int main() {
-    printf("Olá, jogador(a), sejam bem-vindos(as) ao jogo Cartas Super Trunfo, registre aqui os dados da sua carta.\n");
+    char letradoestado, letradoestado2; 
+    char numerocarta[50], numerocarta2[50] = "Codigo da carta";
+    char nomedacidade[50], nomedacidade2[50] = "Nome da cidade";
+    int habitantes, habitantes2;
+    float Areadacidade, Areadacidade2;
+    float Pib, Pib2;
+    int Pontosturisticos, Pontosturisticos2;
 
-    // Variáveis para o jogador
-    char Nome[50]; 
-    int Idade; 
-    float Altura; 
+    printf("Bem vindo(a) ao jogo de cartas super trunfo, insira os dados da sua carta para começar!\n");//DE UM ESPAÇO NO TERMINAL APOS ESSA MENSAGEM
 
-    // Variáveis para a primeira carta
-    char Estado[40] = "RJ";
-    char CodigoDaCarta[30] = "R02";
-    char NomeDaCidade[30] = "Rio de Janeiro";
-    int Populacao = 211223;
-    float Area = 43750.425;
-    float Pib = 300.50; // em bilhões de reais
-    int PontosTuristicos = 58;
+    //PRIMEIRA CARTA
+    printf("Digite uma letra de 'A' a 'H' no qual sua carta se identifica com um estado do Brasil:\n");
+    scanf(" %c", &letradoestado);
+  
+    printf("Digite o codigo da sua carta, Ex: 'A01', 'B02', 'C03'...\n");
+    scanf("%s", numerocarta);
 
-    //Variáveis para a segunda carta
-    char Estado2[40]= "PR";
-    char CodigoDaCarta2[30]= "P01";
-    char NomeDaCidade2[30]= "Curitiba";
-    int Populacao2 = 196372;
-    float area = 430.9;
-    float pib = 50.5; // em bilhões de reais
-    int PontosTuristicos2 = 20;
+    printf("Digite o nome da sua cidade de acordo com que esta na carta\n");
+    scanf("%s", nomedacidade);
+    
 
-    // Coleta de dados do jogador
-    printf("\nDigite seu nome:\n");
-    scanf("%49s", Nome);
-    printf("Seu nome é: %s\n", Nome);
+    printf("Digite a população da sua cidade:\n");
+    scanf("%d", &habitantes);
 
-    printf("Digite sua idade:\n");
-    scanf("%d", &Idade);
-    printf("Sua idade é: %d\n", Idade);
+    printf("Digite a área da sua cidade em km²:\n");
+    scanf("%f", &Areadacidade);
 
-    printf("Digite sua altura:\n");
-    scanf("%f", &Altura);
-    printf("Sua altura é: %.2f\n", Altura);
+    printf("Digite o PIB da sua cidade em bilhões de reais:\n");
+    scanf("%f", &Pib);
 
-    // Exibição dos dados da primeira carta
-    printf("\n--- Dados da Carta ---\n");
-    printf("Estado: %s\n", Estado);
-    printf("Código da Carta: %s\n", CodigoDaCarta);
-    printf("Cidade: %s\n", NomeDaCidade);
-    printf("População: %d habitantes\n", Populacao);
-    printf("Área: %.3f km²\n", Area);
+    printf("Digite a quantidade de pontos turísticos da sua cidade:\n");
+    scanf("%d", &Pontosturisticos);
+
+
+     //EXIBIÇÃO DOS DADOS DA CARTA 1
+
+    printf("--- Dados da Primeira Carta ---\n");
+    printf("Estado: %c\n", letradoestado);
+    printf("Código da Carta: %s\n", numerocarta);
+    printf("Cidade: %s\n", nomedacidade);
+    printf("População: %d habitantes\n", habitantes);
+    printf("Área: %.3f km²\n", Areadacidade);
     printf("PIB: %.2f bilhões de reais\n", Pib);
-    printf("Pontos turísticos: %d\n", PontosTuristicos);
+    printf("Pontos turísticos: %d\n", Pontosturisticos);
 
-   // Exibição dos dados da segunda carta
-    printf("\n--- Dados da Segunda Carta ---\n");
-    printf("Estado: %s\n", Estado2);
-    printf("Código da Carta: %s\n", CodigoDaCarta2);
-    printf("Cidade: %s\n", NomeDaCidade2);
-    printf("População: %d habitantes\n", Populacao2);
-    printf("Área: %.3f km²\n", area);
-    printf("pib: %.2f bilhões de reais\n", pib);
-    printf("Pontos turísticos: %d\n", PontosTuristicos2);
+    //MENSAGEM FINAL COM A COR VERDE
+    printf("\033[0;32m"); //CÓDIGO ANSI PARA TEXTO VERDE
+    printf("A sua primeira carta foi registrada com sucesso!\n");
+    printf("\033[0m"); //RESETA A COR DO TEXTO PARA PADRÃO
+
+    
+    // CARTA 2
+    printf("\nAgora vamos registrar a segunda carta!\n");
+
+    printf("Digite uma letra de 'A' a 'H' no qual sua carta se identifica com um estado do Brasil:\n");
+    scanf(" %c", &letradoestado2);
+
+    printf("Digite o codigo da sua carta, Ex: 'A01', 'B02', 'C03'...\n");
+    scanf("%s", numerocarta2);
+
+    printf("Digite o nome da sua cidade de acordo com que esta na carta\n");
+    scanf("%s", nomedacidade2);
+   
+    printf("Digite agora a população da sua cidade:\n");
+    scanf("%d", &habitantes2);
+
+    printf("Digite a área da sua cidade em km²:\n");
+    scanf("%f", &Areadacidade2);
+
+    printf("Digite o PIB da sua cidade em bilhões de reais:\n");
+    scanf("%f", &Pib2);
+
+    printf("Digite a quantidade de pontos turísticos da sua cidade:\n");
+    scanf("%d", &Pontosturisticos2);
+
+
+     //EXIBIÇÃO DOS DADOS DA CARTA 2
+
+     printf("--- Dados da Segunda Carta ---\n");
+     printf("Estado: %c\n", letradoestado2);
+     printf("Código da Carta: %s\n", numerocarta2);
+     printf("Cidade: %s\n", nomedacidade2);
+     printf("População: %d habitantes\n", habitantes2);
+     printf("Área: %.3f km²\n", Areadacidade2);
+     printf("PIB: %.2f bilhões de reais\n", Pib2);
+     printf("Pontos turísticos: %d\n", Pontosturisticos2);
+     printf("A sua segunda carta foi registrada com sucesso!\n");
+
+    //MENSAGEM FINAL COM A COR VERDE
+    printf("\033[0;32m"); //CÓDIGO ANSI PARA TEXTO VERDE
+    printf("Parabéns! Você cadastrou duas cartas com sucesso!\n");
+    printf("Agora você pode jogar com as cartas que você cadastrou.Boa sorte!\n");
+    printf("\033[0m"); //RESETA A COR DO TEXTO PARA PADRÃO
 
     return 0;
 }
