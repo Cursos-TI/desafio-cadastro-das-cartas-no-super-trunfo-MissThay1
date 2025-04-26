@@ -1,4 +1,7 @@
 1º Teste: Tentando fazer sozinha:
+(estou criando esse documento porque não tinha verificado o ultimo vídeo, eu vi apenas o primeiro e fui montando o código,
+apos eu finalizar para entregar, percebi que era para manter atualizado as minhas modificações.. Como eu estava fazendo pelo
+virtual Studio Code eu deixei salvo meus erros para ver meu progesso, e estou colocando eles aqui ja que eu cometi esse erro...)
 
 #include <stdio.h>
 
