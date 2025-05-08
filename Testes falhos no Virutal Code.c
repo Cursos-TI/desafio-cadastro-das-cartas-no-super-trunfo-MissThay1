@@ -165,5 +165,6 @@ int main() {
  mais um pouco no terminal, então perguntei ao copilot se tinha opção de cor de texto, então usei verificando nas regras se podia
  e chegou no código acima)
 
- PS: tem dois arquivos iguais por que nao sabia como mudava para editar, então quando eu criei uma nova e descobrir depois.. 
+ PS: (tem dois arquivos iguais por que nao sabia como mudava para editar, então quando eu criei uma nova e descobrir depois não sei
+ ainda como apagar...
 Sinto muito pela confusão;;).
